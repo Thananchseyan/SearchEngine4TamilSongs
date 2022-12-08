@@ -1,4 +1,5 @@
-# vAIraMuththu
+# Search Engine for Tamil Songs 
+
 Search Engine for Metaphors of Tamil Songs
 
 I am planning to implement a search engine for the metaphors which are from the Tamil movie songs. The proposed search engine is estimated to consist of the following fields related to all the songs which were released in between 2000 to 2010 by A.R.Rahman, Ilayaraja, Vidyasagar and Yuvan Shankar Raja.  
