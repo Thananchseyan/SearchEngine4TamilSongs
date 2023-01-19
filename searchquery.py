@@ -1,6 +1,6 @@
 import json
 from elasticsearch import Elasticsearch
-from query import basicSearch, standardAnalyzer
+from query import fundamentalSearch, standardAnalyzer
 
 #index of the csv
 INDEX = 'metaphor'
@@ -23,7 +23,7 @@ def search_advanced_query(query):
     return response
 
 def basicSearch(query):
-    query_body = basicSearch(query)
+    query_body = fundamentalSearch(query)
     response = client.search(index=INDEX, body=query_body)
     return response
 

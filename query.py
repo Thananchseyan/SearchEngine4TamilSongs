@@ -42,15 +42,15 @@ def standardAnalyzer(query):
     }
     return resQue
 #query for the basic search
-def basicSearch(searchword):
-    resQue = {
+def fundamentalSearch(query):
+    q = {
         "query": {
             "query_string": {
-                "query": searchword
+                "query": query
             }
         }
     }
-    return resQue
+    return q
 
 def year_range_search(query):
     q={

@@ -47,7 +47,7 @@ def helloWorld():
         # check request.form dict have basic or advanced key
         print(request.form.get('basic'))
         if request.form['basic'] == 'Basic':
-            response =basicSearch(qery)
+            response = basicSearch(qery)
             fields = qery
         elif request.form['basic'] == 'Advanced':
             response = search_advanced_query(qery)
@@ -57,7 +57,6 @@ def helloWorld():
 
         hits =response['hits']['hits']
         time =response['took']
-
         num_of_results = response['hits']['total']['value']
 
         return render_template('result.html', query=fields, hits=hits, num_results=num_of_results, time=time)
