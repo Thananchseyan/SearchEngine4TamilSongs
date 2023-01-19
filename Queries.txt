@@ -1,0 +1,38 @@
+"query": {
+    "bool" : {
+      "must" : [
+        {"term" : { "Composer" : "ஏ. ஆர். ரஹ்மான்" }},
+ 	    {"term" : { "Lyricist" : "வாலி" }},
+	    {"term":{"Star":"மாதவன்"}},
+	    {"range" : {"Year" : { "gte" : 2000, "lte" : 2010 }}}
+	    ]
+	}
+}
+
+"query": {
+    "bool" : {
+      "must" : [
+        {"term" : { "Composer" : "ஏ. ஆர். ரஹ்மான்" }},
+ 	    {"term" : { "Lyricist" : "வாலி" }},
+	    {"term":{"Star":"மாதவன்"}}
+		]
+	}
+}
+
+"query": {
+    "bool" : {
+      "must" : [
+        {"term" : { "Composer" : "ஏ. ஆர். ரஹ்மான்" }},
+ 	    {"term" : { "Lyricist" : "வாலி" }}
+ 	    ]
+ 	}
+}
+
+"query": {
+    "bool" : {
+      "must" : [
+        {"term" : { "Composer" : "ஏ. ஆர். ரஹ்மான்" }}
+      ]
+    }
+}
+
